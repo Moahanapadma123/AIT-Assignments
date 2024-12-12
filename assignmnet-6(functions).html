@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.) Write a function that checks whether a given string is a palindrome (a word, phrase, orsequence that reads the same backward as forward)
+        // function palindrome(str){
+        //     let res=str==str.split("").reverse().join("")
+        //     console.log(res);
+        // }palindrome("malayalam")
+
+
+//2.) Write a function that takes a string and returns it in reverse order. 
+// function reverse(str){
+//     res=""
+//     for(let i=str.length-1;i>=0;i--){
+//         res +=str[i]
+//     }
+//      console.log(res);
+//     }reverse("padma")
+//Remove Whitespace from a String Write a function that removes all leading and trailing whitespace from a string. 
+
+// function remwhitesp(str){
+//     let res=str.trim().replace(/\s+/g," ")
+//     console.log(res);
+// }remwhitesp("  padma      BE ")
+
+
+//4.) Sort an Array of Strings Alphabetically Write a function that sorts an array of strings.
+// function sorting(str){
+//     let spltstr=str.split(",").map(Number).sort((a,b)=>a-b).join(",")
+//     console.log(spltstr);
+// }sorting("10,22,33,40,5")
+
+
+// 5.) Create a function that takes two arrays and insert the second array in the middle of the f irst array. Examples tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]) ➞ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] tuckIn([15,150], [45, 75, 35]) ➞ [15, 45, 75, 35, 150]
+let a=[2, 3, 4, 5, 6, 7, 8, 9]
+let b=[45, 75, 35]
+function inserting(orgarr,array){
+let middle=Math.floor(orgarr.length/2);
+let firstpart=orgarr.slice(0,middle)
+let secondpart=orgarr.slice(middle)
+let result=firstpart.concat(array,secondpart)
+console.log(result);
+return result;
+}inserting([1, 10],a)
+inserting([15,150],b)
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

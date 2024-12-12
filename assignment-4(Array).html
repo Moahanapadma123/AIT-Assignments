@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array(Ass-4)</title>
+</head>
+<body>
+    <script>
+        //1. Write a program to calculate the sum of all elements in an array.
+
+    // let a=[1,2,3,4,5,6]
+    // sum=0;
+
+    // function add(num){
+        
+    //     for(i=0;i<num.length;i++){
+    //         sum+=num[i]
+
+
+    //     }
+    //     console.log(sum);
+        
+
+    // }add(a)
+// 2. Create a program to find the largest number in an array. 
+// let a=[1,2,3,4,5,6]
+//     max=[0]
+//     function largest(){
+//      for(i=0;i<a.length;i++){
+//         if(a[i]>max)
+//         max=a[i]
+    
+//     }console.log(max);
+//     }largest()
+
+    //3. Implement a program to remove duplicate values from an array.
+    // let a=[1,2,3,3,4,4,5,5] 
+    // let res=[]
+    // function duplicate(num){
+    //     for(let i=0;i<num.length;i++){
+    //     if(!res.includes(num[i])){
+    //     res.push(num[i])
+    //     }
+    //     }console.log(res);
+        
+    // }duplicate(a)
+    //4. Write a program that reverses the elements of an array without using the reverse method. 
+       
+    // let a=['P','a','d','m','a']
+    // let b=[]
+    // function reverse(array){
+    //     for(i=array.length-1;i>=0;i--){
+    //         b.push(array[i])
+    //     }
+    //     console.log(b);
+        
+
+    // }reverse(a)
+    //
+// 5. Create a program that counts how many times a specific element appears in an array.
+// let a=[1,2,3,3,3,3,4,5,6]
+// let count=0
+
+// function countfn( num,target){
+//     for(let i=0;i<num.length;i++){
+//         if(num[i]==target)
+//         count ++;
+//     }   
+//     console.log(count);
+    
+
+// }countfn(a,3)
+
+    
+// 6. Write a program to separate even and odd numbers into two different arrays.
+// let arr1=[1,2,4,5,6,8]
+// let arr2=[1,2,3,3,6,8]
+// function oddEven(array){
+//     let evenNum=[]
+//     let oddNum=[]
+//     for(i=0;i<array.length;i++){
+//         if(array[i]%2==0){
+//             evenNum.push(array[i])
+            
+//         }else{
+//             oddNum.push(array[i])
+            
+            
+//         }
+//     }
+//     console.log(`Even numbers are ${evenNum}`);
+//     console.log(`odd numbers are ${oddNum}`);
+    
+    
+
+// }oddEven(arr1)
+// oddEven(arr2)
+
+// 7. Combine two numeric arrays into a single sorted array.
+// let arr1=[1,2,3,4]
+// let arr2=[2,3,4,5]
+// let res=[]
+// function sort(num1,num2){
+//     res =num1.concat(num2)
+//     res.sort()
+   
+//     console.log(res);
+// }sort(arr1,arr2)
+// 8. Given an array containing n distinct numbers taken from 0 to n, find the missing number. 
+// let arr=[0,1,2,3,5,6,7,9,10]
+
+// sum=0;
+// function Missing(num){
+//     for(let i=0;i<num.length;i++){
+//         sum +=num[i]
+//     }
+//     let formula= ((num.length+1)*(num.length+2))/2
+//     let result=formula-sum
+//     console.log(result);
+    
+
+// }Missing(arr) wrong
+//9. Rotate the elements of an array to the right by a specified number of positions. 
+// let array=['p','a','d','m','a']
+// function rotatearr(position,arr){
+//     let arrslice=arr.slice(-position)
+//     let arrrem=arr.slice(0,arr.length-position)
+//     let result=arrslice.concat(arrrem)
+//     console.log(result);
+    
+
+// }rotatearr(4,array)
+
+//10. Split an array into chunks of a specified size, returning a 2D array.
+let a=[1,2,3,4,5,6,7,8,9]
+res=[]
+function chunks(array,size){
+   for(i=0;i<array.length;i+=size){
+     let chunk=array.slice(i,i+3)
+     res.push(chunk)
+   }
+    console.log(res);
+    
+
+
+
+}chunks(a,3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task 1: Destructure a, b, and c with default values 10, 20, and 30 respectively. Write the destructuring assignment. Input : const obj = { a: 1, b: undefined, c: null };
+        // const {a=10,b=20,c=30} = { a: 1, b: undefined, c: null };
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+
+        // Task 2: Given the object const obj = { a: { b: { c: 1 } }, d: 2 }; destructure to extract c and d in one line. 
+        // const  {a:{b:{c}},d} = { a: { b: { c: 1 } }, d: 2 };
+
+        // console.log(c,d);
+        //Task 3: Write a function “sum” that takes an object with properties a, b, and c as a parameter and returns their sum. Use destructuring in the function parameter. 
+        // function sum({a,b,c}){
+        //     total=a+b+c
+        //     return total;
+
+        // } let result = sum({a:2,b:3,c:5})
+        // console.log(result);
+        
+        //Task 4: Use array destructuring to extract the first and third elements into variables. Input: const arr = [1, 2, 3, 4, 5]; 
+        // const [a, ,b] = [1, 2, 3, 4, 5]; 
+        // console.log(a,b);
+        
+//Task 5: Given const key = "name" and const obj = { name: "John" }; use destructuring to extract the value of name using the key variable.
+const key = "name";
+const obj = { name: "John" };
+
+// Destructuring using a dynamic key
+const { [key]: FRname } = obj;
+
+console.log(FRname); // Output: John
+
+
+
+//Task 6: Create a function that takes two arrays and insert the second array in the middle of the first array using spread operator. Examples tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]) ➞ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] tuckIn([15,150], [45, 75, 35]) ➞ [15, 45, 75, 35, 150]
+//  let a=[1, 10]
+//  let b=[...a,2, 3, 4, 5, 6, 7, 8, 9]
+//  result=b.sort((a,b) => a-b)
+//  console.log(result);
+
+ 
+//   let x=[15,150]
+//   let y=[x[0],45, 75, 35 ,x[1]]
+//   console.log(y);
+  
+
+
+ 
+        
+    </script>
+</body>
+</html>

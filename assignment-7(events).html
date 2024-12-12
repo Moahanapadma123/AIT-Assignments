@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+
+    <!-- <figure>
+        <img id="img1" src="https://images.unsplash.com/photo-1600302445684-b9f07d8eced3?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="god">
+    </figure> -->
+   
+    <div id="parent">
+        <button id="child">Click Me</button>
+    </div>
+    
+  
+
+
+
+<script>
+        // 3.) Create a button that counts the number of times it has been clicked. Display the counter in a element.
+    //     const btn1=document.getElementById("btn")
+    //     const clicking=document.getElementById("clickCounts")
+    //     count=0;
+
+    //     function countings(){
+    //         count ++;
+    //         clicking.textContent=count;
+
+
+    //     }
+    //   btn1.addEventListener("click",countings)
+    //4.) Detect and display the key that the user presses on the keyboard. 
+//   const inputValue=document.getElementById("inputfield")
+//   const contextValue=document.getElementById("context")
+//    inputValue.addEventListener("keypress",(e)=>{
+//     contextValue.textContent=e.key
+//     console.log(e.key);
+// })
+//5.) Track and display the mouse's current X and Y coordinates as the user moves the mouse over a <div>
+// const div1=document.getElementById("divs")
+// const spans1=document.getElementById("spans")
+// div1.addEventListener("mouseover",(e)=>{
+// const x=e.offsetX
+// const y=e.offsetY
+// spans1.textContent=`x:${x} y:${y}`
+// })
+// div1.addEventListener("mouseleave",()=>{
+//     spans1.textContent="x:0 y:0"   
+// })
+// 6.) Change the background color of a when it's double-clicked.
+// document.addEventListener("dblclick",()=>{
+// document.body.style.background="red";
+// })
+//When the user hovers over a <div>, display some hidden text. Hide the text when the user stops hovering.
+// const a=document.getElementById("divs")
+// const b=document.getElementById("spans")
+
+// a.addEventListener("mouseover",()=>{
+//     b.textContent="the text is hidden"
+// })
+// a.addEventListener("mouseleave",()=>{
+//     b.textContent=""
+
+// })
+//Create an input field that displays how many characters the user has typed.
+// const inputs=document.getElementById("inputField")
+// const spandispay=document.getElementById("spans")
+
+// count=0
+// function typing(){
+//     let variable=inputs.value.length;
+//     spandispay.textContent="counts:" +variable
+   
+
+// }typing()
+// addEventListener("input",typing)
+//9.) When the user clicks on a  <div>, change the text inside it. 
+    // const divv=document.getElementById("divs")
+    
+
+    // divv.addEventListener("click",()=>{
+    //     divv.textContent="you clicked me"
+    // })
+//10.) When the user types in an input field, automatically convert the text to uppercase.
+
+//    const inputs =document.getElementById("inputField")
+ 
+//    inputs.addEventListener("input",()=>{
+//     inputs.value=inputs.value.toUpperCase()
+//    })
+// 11.) Change an image to another when the user hovers over it and revert to the original image when the user stops hovering. 
+// const images1 = document.getElementById("img1");
+
+// images1.addEventListener("mouseover", () => {
+//     images1.src = "https://images.unsplash.com/photo-1721332155637-8b339526cf4c?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; // Image on hover
+// });
+
+// images1.addEventListener("mouseleave", () => {
+//     images1.src = "https://images.unsplash.com/photo-1600302445684-b9f07d8eced3?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; // Image on mouse leave
+// });
+//12.) Change the background color of the page when the user scrolls past a certain point. 
+// const para=document.getElementById("paragraph")
+
+// window.addEventListener("scroll",()=>{
+//     const y=window.scrollY
+//     if(y>300){
+//         para.style.backgroundColor="red"
+//     }else{
+//         para.style.backgroundColor="white"
+//     }
+    
+
+// })
+//13.) Create a button that, when the button is clicked, Add a new list item to an unordered list. 
+
+
+
+
+
+
+// const btn1 = document.getElementById("btn");
+// const ulList = document.getElementById("ullist");
+
+// btn1.addEventListener("click", () => {
+//     // Create a new <li> element
+//     const newElement = document.createElement("li");
+    
+//     // Add some text content to the new list item
+//     newElement.textContent = "New List Item";
+
+//     // Append the new list item to the unordered list
+//     ulList.appendChild(newElement);
+// });
+
+
+//14.) Once the user clicks a button, disable it and display a message that the button has been clicked. 
+// const buttons=document.getElementById('btn')
+// buttons.addEventListener("click",()=>{
+//     buttons.disabled=true;
+//     buttons.textContent="you clicked me"
+// })
+//15.) Capture and log every single click made anywhere on the page, including clicks on the document, buttons, links, etc.
+// const btn=document.getElementById("btn")
+// const links=document.getElementById("links")
+// const para=document.getElementById("para")
+// count=0
+
+// function logs(event){
+//     count ++
+//     console.log(`${event.target.tagName} with ID ${event.target.id} total counts${count}`);
+
+// }btn.addEventListener("click",logs)
+// links.addEventListener("click",logs)
+// para.addEventListener("click",logs)
+
+
+document.getElementById("parent").addEventListener("click", () => {
+alert("Parent Clicked");
+    });
+
+    document.getElementById("child").addEventListener("click", () => {
+        alert("Child Clicked");
+    });
+
+
+
+</script>
+</body>
+</html>
